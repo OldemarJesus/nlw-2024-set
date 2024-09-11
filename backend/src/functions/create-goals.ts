@@ -6,6 +6,11 @@ interface CreateGoalRequest {
   desiredWeeklyFrequency: number
 }
 
+/**
+ * Util to register new goal into db
+ * @param CreateGoalRequest
+ * @returns
+ */
 export async function createGoal({
   title,
   desiredWeeklyFrequency,

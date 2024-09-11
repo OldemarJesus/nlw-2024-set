@@ -10,6 +10,11 @@ interface CreateGoalCompletionRequest {
 const firstDayOfWeek = dayjs().startOf('week').toDate()
 const lastDayOfWeek = dayjs().endOf('week').toDate()
 
+/**
+ * Util to register new goal completion into db
+ * @param CreateGoalCompletionRequest
+ * @returns
+ */
 export async function createGoalCompletion({
   goalId,
 }: CreateGoalCompletionRequest) {

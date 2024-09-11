@@ -2,6 +2,9 @@ import { client, db } from '.'
 import { goalCompletions, goals } from './schema'
 import dayjs from 'dayjs'
 
+/**
+ * Utils to fill DB with base data
+ */
 async function seed() {
   await db.delete(goalCompletions)
   await db.delete(goals)

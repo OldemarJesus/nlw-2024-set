@@ -1,6 +1,9 @@
 import { pgTable, text, integer, timestamp } from 'drizzle-orm/pg-core'
 import { createId } from '@paralleldrive/cuid2'
 
+/**
+ * Goals DB Table Schema
+ */
 export const goals = pgTable('goals', {
   id: text('id')
     .primaryKey()
@@ -12,6 +15,9 @@ export const goals = pgTable('goals', {
     .defaultNow(),
 })
 
+/**
+ * Goal Completions DB Table Schema
+ */
 export const goalCompletions = pgTable('goal_completions', {
   id: text('id')
     .primaryKey()
