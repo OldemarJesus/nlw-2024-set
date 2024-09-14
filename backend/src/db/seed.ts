@@ -12,9 +12,9 @@ async function seed() {
   const result = await db
     .insert(goals)
     .values([
-      { title: 'Acordar cedo', desiredWeeklyFrequency: 5 },
-      { title: 'Me exercitar', desiredWeeklyFrequency: 3 },
-      { title: 'Meditar', desiredWeeklyFrequency: 1 },
+      { title: 'Estudar Fundamentos Intermediarios NodeJS', desiredWeeklyFrequency: 1 },
+      { title: 'Criar um backend API com base nos fundamentos NodeJS', desiredWeeklyFrequency: 1 },
+      { title: 'Estudar novas funcionaldades ReactJS e biliotecas famosas com Fastify', desiredWeeklyFrequency: 2 },
     ])
     .returning()
 
